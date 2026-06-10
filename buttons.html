@@ -15,7 +15,6 @@
 
 
 -->
-
 <style>
     .B1{
         background-color: rgb(199, 0, 0);
@@ -26,6 +25,7 @@
         border-radius:2px;
         cursor:pointer;
         margin-right: 8px;
+        transition: opacity 0.15s;
     }
     .B2{
         background-color: white ;
@@ -38,6 +38,7 @@
         border-radius:2px;
         cursor: pointer;
         margin-right: 8px;
+        transition: background-color 0.15s, color 0.15s;
     }
 
     .B3{
@@ -50,7 +51,28 @@
         cursor: pointer;
         font-weight: bold;
         font-size: 15px;
-        
+        transition: box-shadow 0.15s;
+    }
+
+    .B1:hover{
+        opacity: 0.6;
+    }
+    .B1:active{
+        opacity: 0.4;
+    }
+
+    .B2:hover{
+        background-color: rgb(32,100,247);
+        color: white;
+    }
+    .B2:active{
+        opacity: 0.7;
+    }
+    .B3:hover{
+        box-shadow: 0px 7px 14px rgba(0, 0, 0,0.15);
+    }
+    .B3:active{
+        opacity: 0.7;
     }
 
 </style>
@@ -67,3 +89,5 @@
 <button class="B3">
     Tweet
 </button>
+
+<!-- Hover :- Change style when cursor hovers on it-->
