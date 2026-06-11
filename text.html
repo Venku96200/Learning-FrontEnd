@@ -1,0 +1,100 @@
+<!-- 
+ 
+Selector with higher specificity will have higher priority
+Ex:- Class name selector> element name selector
+     .video-title{} > p{}
+-->
+
+<!--
+
+Text element:---
+<strong>   Make the text element bold
+<u>        Underlines the text element
+
+<span>     is a generic , we can give it class and style it        
+-->
+
+
+
+<style>
+    p{
+        font-family:arial;
+        margin-top:0px;
+        margin-bottom:0px;
+    }
+
+    .video-title{
+        
+        font-weight:bold;
+        font-size:18px;
+        width: 300px;
+        line-height: 24px;
+       
+    }
+    .views{
+        font-size: 15px;
+        color: rgb(96,96,96);
+        margin-top: 7px;
+    }
+    .Marques{
+        font-size: 15px;
+        color: rgb(96,96,96);
+        margin-top:20px;
+    }
+    .description{
+        color: rgb(96,96,96);
+        font-family: arial;
+        font-size: 15px;
+        width: 290px;
+        line-height: 20px;
+        margin-top: 20px;
+        margin-bottom: 85px;
+    }
+    .apple{
+           text-align: center;
+           font-size: 14px;
+           padding: 18px;
+           background-color: rgb(227,65,64);
+           color: white;
+           margin-bottom: 10px;
+           
+    }
+    .shop-now:hover{
+        text-decoration: underline;
+        opacity: 0.7;
+        cursor: pointer;
+    }
+    .span-example:hover{
+        text-decoration: underline;
+        opacity: 0.7;
+        cursor: pointer;
+        margin-left:20px;
+    }
+</style>
+
+
+
+<p class ="video-title">
+    Talking Tech and AI with Google CEO Sundar Pichai!
+</p>
+
+<p class ="views">
+    3.4M views &#183; 6 months ago
+</p>
+
+<p class ="Marques">
+    Marques Brownlee &#10003;
+</p>
+
+<p class="Description">
+    Talking tech and AI on the heels of Google I/O. Also a daily driver phone reveal from Google's CEO. Shoutout to Sundar!
+</p>
+
+<p class ="apple">
+    Shop early for the best selection of holiday favourites. <span class="shop-now">Shop now &#62;</span> 
+</p>
+
+<p class="learning_text_element">
+    Shop early for the <strong>best selection</strong> of <u>holiday</u> favourites. <span class ="span-example">Shop now</span> &#62;
+
+</p>
