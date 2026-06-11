@@ -25,6 +25,7 @@
 <style>
     .link{
         color: rgb(0,113,133);
+        transition: color 0.15s;
     }
     .Head{
         font-size: 24px;
@@ -43,6 +44,7 @@
         border-radius: 15px;
         cursor: pointer;
         margin-right: 10px;
+        transition: background-color 0.15s;
     }
 
     .buy{
@@ -52,6 +54,23 @@
         border: none;
         border-radius: 15px;
         cursor: pointer;
+    }
+
+    .link:hover{
+        color: rgb(255,164,28);
+    }
+    .add:hover{
+        background-color: rgb(233, 201, 42);
+    }
+    .add:active{
+        opacity: 0.6;
+    }
+
+    .buy:hover{
+        background-color: rgb(230, 139, 4);
+    }
+    .buy:active{
+        opacity: 0.6;
     }
 
  
