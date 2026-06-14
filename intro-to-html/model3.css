@@ -1,0 +1,27 @@
+p{
+    font-family:Montserrat;
+    padding-bottom:0px;
+    padding-top:0px;
+    margin-top: 0px;
+    margin-bottom:0px;
+
+}
+
+.model{
+    font-size: 50px;
+    font-weight: bold;   
+    text-align: center;
+}
+
+.line{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 25px;
+}
+.touchless{
+    text-decoration: underline;
+}
+.touchless:hover{
+    cursor:pointer;
+    opacity: 0.6;
+}
