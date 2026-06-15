@@ -33,43 +33,68 @@ INLINE ELEMENTS:- They appear in the text
 
 We can use a css feature known as DISPLAY to switch amoung these
 
+-------------------------------------------------------------------
 
-
-
+<div>  #  Divison (just a box)
+       # Containers to store other elements
+       # <div> is a block element
+       # div  CAN CONTAIN OTHER ELEMENTS INSIDE IT
+       # Note:- Block elements placed inside a div(container)
+                will only take up the width of the div not the whole line
 -->
 
 <!DOCTYPE html>
 <html>
     <head>
         <style>
-            .sundar{
+            .sundar,
+            .mark{
                 width: 300px;  
+                display: block;
             }
             .search-bar{
                 font-size: 20px;
-                margin-left: 12px;
+                margin-left:200px;
                 padding: 2px;
-            }
-            .search-bar,
-            .sundar{
                 display:block;
             }
+            .video-preview{
+                display:inline-block;
+                width: 300px;
+                margin-top: 20px;
+                vertical-align: top;
+                margin-right: 10px;
+            }
+            .video-preview2{
+                display:inline-block;
+                width: 300px;
+                margin-top: 20px;
+                vertical-align: top;
+            }
+
 
 
         </style>
     </head>
     <body>
         <input class="search-bar" type ="text" placeholder="Search">
+
+        <div class="video-preview">
         <img class="sundar" src="thumbnails/thumbnail-1.webp">
-        <p>
-          Talking Tech and AI with Google CEO Sundar Pichai!
-        </p>
-        <p>
-            Marques Brownlee
-        </p>
-        <p>
-            3.4M views &#183; 6 months ago
-        </p>
+        <p>Talking Tech and AI with Google CEO Sundar Pichai!</p>
+        <p> Marques Brownlee</p>
+        <p>3.4M views &#183; 6 months ago</p>  
+        </div>
+
+        <div class="video-preview2">
+        <img class="mark" src="thumbnails/thumbnail-2.webp">
+        <p>Try Not To Laugh Challenge</p>
+        <p> Markiplier</p>
+        <p>19M views &#183; 4 years ago</p>  
+        </div>
+
+
+        
 
     </body>
 </html>
