@@ -16,6 +16,26 @@ some properties of image google them :--
 
 attributes:- type,name,value,placeholder, required, id, readonly, disabled
 
+
+-------------------------------------------------------------
+BLOCK ELEMENTS:- THE ELEMENTS TAKE UP ENTIRE LINE even
+                 though we assign a width to them
+                 (ie there margin left and right is infinite)
+                 Ex:- Paragraph
+
+
+
+INLINE BLOCK ELEMENTS:- ONLY TAKES UP AS MUCH SPACE AS NEEDED 
+                        Ex:- Image, Input
+
+INLINE ELEMENTS:- They appear in the text
+                  Ex:- <strong>, <span> etc
+
+We can use a css feature known as DISPLAY to switch amoung these
+
+
+
+
 -->
 
 <!DOCTYPE html>
@@ -30,13 +50,26 @@ attributes:- type,name,value,placeholder, required, id, readonly, disabled
                 margin-left: 12px;
                 padding: 2px;
             }
+            .search-bar,
+            .sundar{
+                display:block;
+            }
+
 
         </style>
     </head>
     <body>
-        <img class="sundar" src="thumbnails/thumbnail-1.webp">
         <input class="search-bar" type ="text" placeholder="Search">
-        <img class="google" src="download (1).webp">
+        <img class="sundar" src="thumbnails/thumbnail-1.webp">
+        <p>
+          Talking Tech and AI with Google CEO Sundar Pichai!
+        </p>
+        <p>
+            Marques Brownlee
+        </p>
+        <p>
+            3.4M views &#183; 6 months ago
+        </p>
 
     </body>
 </html>
