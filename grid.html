@@ -1,0 +1,86 @@
+<!--  
+
+CSS GRIDS:-  
+
+Grids maintain allignment 
+they is so spacing issue like nested layout
+
+
+Ex:- grid-template-columns: 100px 200px 100px; 
+   
+     # Here number of values determine number of columns(ie 3)
+     # The value of each column determine the width of the column
+   
+     
+     # 1fr takes the remaining freespace of the grid    
+     # We use this fr to make our Final youtube project to change size
+       as the window is resized 
+-->
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Grid Practice</title>
+
+    </head>
+    <body>
+        <div style="
+                display:grid;
+                grid-template-columns: 100px 200px ;
+
+            ">
+            <div style="background-color: aqua;">100px</div>
+            <div style="background-color: pink">200px<p>text1</p></div>
+        </div>
+
+
+
+        <div style="
+                display:grid;
+                grid-template-columns: 100px 100px;
+                margin-top: 10px;
+            ">
+            <div style="background-color: aqua;">100px</div>
+            <div style="background-color: pink">100px<p>text1</p></div>
+        </div>
+
+
+
+        <div style="
+                display:grid;
+                grid-template-columns: 100px 1fr;  
+                margin-top: 10px;
+            ">
+            <div style="background-color: aqua;">100px</div>
+            <div style="background-color: pink">1fr</div>
+        </div>
+
+
+
+        <div style="
+                display:grid;
+                grid-template-columns: 1fr 1fr 1fr;  
+                margin-top: 10px;
+                padding-top: 200px;
+                padding-bottom:1000px;
+                column-gap: 20px;
+                row-gap: 40px;
+            ">
+            <div style="background-color: pink; height: 200px;">1fr</div>
+            <div style="background-color: aqua;">1fr</div>
+            <div style="background-color: pink">1fr</div>
+            <div style="background-color: aqua; height: 200px;">1fr</div>
+            <div style="background-color: pink">1fr</div>
+            <div style="background-color: aqua;">1fr</div>
+
+        </div>
+
+        
+        
+
+
+    </body>
+
+</html>
