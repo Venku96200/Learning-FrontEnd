@@ -31,12 +31,15 @@
             }
 
             .friend{
-                margin-left: 10px;
+                
                 margin-top: 2px;
                 color: rgb(109, 108, 108);
                 font-family: arial;
                 font-size: 15px;
                 margin-bottom: 0px;
+                width:120px;
+                display:inline-block;
+                vertical-align: top;
             }
             
             .button{
@@ -51,31 +54,67 @@
                 margin-bottom: 10px;
 
             }
+            .profilep{
+                width:30px;
+                height:30px;
+                display:inline-block;
+                border-radius: 15px;
+                margin-right: 5px;
+            }
+            .mutual{
+                margin-top:5px;
+                margin-left:10px;
+            }
 
         </style>
     </head>
     <body>
-        <div class="oliver">
-            <img class="cat" src="OIP.webp">
-            <p class="name">Oliver</p>
-            <p class="friend">2 mutual friends</p>
-            <button class="button"> Add Friend</button>
-
-        </div>
-        <div class="mimi">
-            <img class="cat" src="OIP (1).webp">
-            <p class="name">Mimi</p>
-            <p class="friend">3 mutual friends</p>
-            <button class="button"> Add Friend</button>
-
-        </div>
-        <div class="Rex">
-            <img class="cat" src="OIP (2).webp">
-            <p class="name">Rex</p>
-            <p class="friend">4 mutual friends</p>
-            <button class="button"> Add Friend</button>
+        <div>
+            <div class="oliver">
+                <div>
+                    <img class="cat" src="OIP.webp">
+                </div>
+                <div>
+                    <div><p class="name">Oliver</p></div>
+                    <div class="mutual"> 
+                        <img class="profilep" src="OIP22.webp">
+                        <p class="friend">2 mutual friends</p>
+                    </div>
+                    
+                    <button class="button"> Add Friend</button>
+                </div> 
+            </div>
 
 
+            <div class="oliver">
+                <div>
+                    <img class="cat" src="OIP (1).webp">
+                </div>
+                <div>
+                    <div><p class="name">Mimi</p></div>
+                    <div class="mutual"> 
+                        <img class="profilep" src="OIP22.webp">
+                        <p class="friend">3 mutual friends</p>
+                    </div>
+                    
+                    <button class="button"> Add Friend</button>
+                </div> 
+            </div>
+
+            <div class="oliver">
+                <div>
+                    <img class="cat" src="OIP (2).webp">
+                </div>
+                <div>
+                    <div><p class="name">Rex</p></div>
+                    <div class="mutual"> 
+                        <img class="profilep" src="OIP22.webp">
+                        <p class="friend">4 mutual friends</p>
+                    </div>
+                    
+                    <button class="button"> Add Friend</button>
+                </div> 
+            </div>
         </div>
     </body>
 </html>

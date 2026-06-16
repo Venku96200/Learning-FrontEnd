@@ -43,10 +43,31 @@ We can use a css feature known as DISPLAY to switch amoung these
                 will only take up the width of the div not the whole line
 -->
 
+<!-- 
+Layout Technique
+
+Spliting webpage/ certain part of webpage into 
+vertical or horizontal layouts and then creating them
+using code
+
+Nested Layout Technique
+
+Using layouts inside Layouts
+
+-->
 <!DOCTYPE html>
 <html>
     <head>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <style>
+            p{
+                font-family:roboto,arial;
+                margin-top:0;
+                margin-bottom:0;
+            }
             .sundar,
             .mark{
                 width: 300px;  
@@ -65,36 +86,78 @@ We can use a css feature known as DISPLAY to switch amoung these
                 vertical-align: top;
                 margin-right: 10px;
             }
-            .video-preview2{
+            .video-title{
+                margin-top:0px;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 20px;
+                margin-bottom: 10px;
+
+            }
+            
+            .Channel-picture{
                 display:inline-block;
-                width: 300px;
-                margin-top: 20px;
+                width: 50px;
                 vertical-align: top;
             }
+            .video-info{
+                display:inline-block;
+                width: 200px;
+            }
+            .channel-pic{
+                width:36px;
+                border-radius:18px;
+                
+            }
+            .thumbnail-div{
+                margin-bottom:12px;
 
+            }
+            .video-aurthor,
+            .video-det{
+                font-size: 12px;
+                color: rgb(96,96,96);   
+            }
 
+            .video-aurthor{
+                margin-bottom:4px;
 
+            }
         </style>
     </head>
     <body>
         <input class="search-bar" type ="text" placeholder="Search">
 
         <div class="video-preview">
-        <img class="sundar" src="thumbnails/thumbnail-1.webp">
-        <p>Talking Tech and AI with Google CEO Sundar Pichai!</p>
-        <p> Marques Brownlee</p>
-        <p>3.4M views &#183; 6 months ago</p>  
+            <div class="thumbnail-div">
+                <img class="sundar" src="thumbnails/thumbnail-1.webp">
+            </div>
+            <div>
+                <div class ="Channel-picture">
+                    <img class ="channel-pic" src="channel_profile/channel-1.jpeg">
+                </div>
+                <div class="video-info">
+                    <p class ="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+                    <p class="video-aurthor"> Marques Brownlee</p>
+                    <p class="video-det">3.4M views &#183; 6 months ago</p> 
+                </div>
+            </div>
         </div>
-
-        <div class="video-preview2">
-        <img class="mark" src="thumbnails/thumbnail-2.webp">
-        <p>Try Not To Laugh Challenge</p>
-        <p> Markiplier</p>
-        <p>19M views &#183; 4 years ago</p>  
+         
+        <div class="video-preview">
+        <div class="thumbnail-div">
+                <img class="sundar" src="thumbnails/thumbnail-2.webp">
+            </div>
+            <div>
+                <div class ="Channel-picture">
+                    <img class ="channel-pic" src="channel_profile/channel-2.jpeg">
+                </div>
+                <div class="video-info">
+                    <p class ="video-title">Try Not To Laugh Challenge #9</p>
+                    <p class="video-aurthor"> Markiplier</p>
+                    <p class="video-det">19M views &#183; 4 years ago</p> 
+                </div>
+            </div>  
         </div>
-
-
-        
-
     </body>
 </html>
