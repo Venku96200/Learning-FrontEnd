@@ -1,0 +1,123 @@
+<!--
+
+Flex/ Flexbox
+
+1fr= flex:1
+
+Difference btw CSS grid and Flexbox:--
+
+In css grid we define the order and width of each column in template div itself
+hence when we change order of columns the width order remains same.
+
+In Flexbox we defined the width(width:100px or flex:1) of the columns in there respective divs
+hance changing the order will also change the width order
+
+Grid= Rigid Layout
+Flexbox= Flexible Layout
+
+
+property:-
+justify-content:-  Used to adjust position of elements in the flexbox horizontally
+align-items:-  used to align elements vertically in the flexbox
+
+we can use all these properties to build the header in our YT project
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flexbox Practice</title>
+
+    </head>
+    <body>
+        <div style="
+            display:flex;
+            flex-direction: row;
+            ">
+            <div style="background-color: aqua;"> div1 </div>
+            <div style="background-color: pink;"> div2 </div>
+        </div>
+
+        <div style="
+            display:flex;
+            flex-direction: row;
+            margin-top:30px;
+            ">
+            <div style="background-color: aqua;
+                 width:100px;"> 100px </div>
+            <div style="background-color: pink;
+                 flex:1"> flex:1 </div>
+        </div>
+
+
+        <div style="
+            display:flex;
+            flex-direction: row;
+            margin-top:30px;
+            ">
+            <div style="background-color: aqua;
+                 width:100px;"> 100px </div>
+            <div style="background-color: pink;
+                 flex:1"> flex:1 </div>
+            <div style="background-color: rgb(30, 227, 231);
+                 flex:1"> flex:2 </div>     
+        </div>
+
+
+        <div style="
+            display:flex;
+            flex-direction: row;
+            height: 60px;
+            margin-top:30px;
+            border-width:1px;
+            border-style: solid;
+            border-color: gray;
+            justify-content: center;
+            ">
+            <div style="background-color: aqua;
+                 width:100px;"> 100px </div>
+            <div style="background-color: pink;
+                 width:100px;"> 100px </div>
+            <div style="background-color: rgb(30, 227, 231);
+                 width:100px;"> 100px </div>     
+        </div>
+
+
+        <div style="
+            display:flex;
+            flex-direction: row;
+            height: 60px;
+            margin-top:30px;
+            border-width:1px;
+            border-style: solid;
+            border-color: gray;
+            justify-content: space-between;
+            ">
+            <div style="background-color: aqua;
+                 width:100px;"> 100px </div>
+            <div style="background-color: pink;
+                 width:100px;"> 100px </div>
+            <div style="background-color: rgb(30, 227, 231);
+                 width:100px;"> 100px </div>     
+        </div>
+
+        <div style="
+            display:flex;
+            flex-direction: row;
+            height: 60px;
+            margin-top:30px;
+            border-width:1px;
+            border-style: solid;
+            border-color: gray;
+            justify-content: space-between;
+            align-items:center;
+            ">
+            <div style="background-color: aqua;
+                 width:100px;"> 100px </div>
+            <div style="background-color: pink;
+                 width:100px;"> 100px </div>
+            <div style="background-color: rgb(30, 227, 231);
+                 width:100px;"> 100px </div>     
+        </div>
+    </body>
+</html>
