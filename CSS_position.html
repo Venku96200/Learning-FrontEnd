@@ -19,6 +19,21 @@ Right:
 What if we set both left and Right:----- The element will stretch
 -->
 
+<!--
+
+Position: Fixed  :-- Placed in the browser window (Dont move when we scroll)
+Position: Absolute :-- Placed on the  page (Move when we scroll)
+
+Z-index:   The element with higher z-index will appear above the element with 
+           lower Z-index
+
+often parent = relative and child=absolute
+
+ie(position:absolute element inside a position:relative element)
+
+-->
+
+
 
 <!DOCTYPE html>
 <html>
@@ -55,12 +70,31 @@ What if we set both left and Right:----- The element will stretch
         <div style="
         background-color: rgb(20, 181, 55);
         color:white;
-        position:fixed;
+        position:absolute;
         left:0px;
         bottom:0px;
         top:50px;
         width:70px;
         ">sizebar</div>
+
+
+        <div style="
+        background-color: rgb(183, 16, 44);
+        position:absolute;
+        color:white;
+         left:500px;
+        bottom:0px;
+        top:50px;
+        width:70px;
+        ">
+
+        <div style="
+        position:relative;
+        ">div1</div>
+        
+    
+    
+    </div>
 
 
 
