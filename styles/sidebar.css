@@ -1,8 +1,89 @@
+
+
+/*
+New ways to target elements In css
+
+we already know .classname{}
+
+ NEW:-
+    1)   .sidebar-link,
+         .header{
+
+         }
+
+         Here we are targeting ALL the elements with
+         class sidebar-link and ALL the elements with
+         class header
+         
+    2)   .sidebar-link img{
+         
+         } 
+
+        Here we target all the elements with selector img
+        withing the sidebar-link element
+
+REMEMBER::-
+
+1) For Flex-Direction= row
+                        
+              a) Justify-content: Center ,  will Center the elements Horizontally
+              b) align-items: center , will Center the elements vertically
+
+
+1) For Flex-Direction= Column
+                        
+              a) Justify-content: Center ,  will Center the elements vertically
+              b) align-items: center , will Center the elements Horizontally              
+
+
+
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .sidebar{
     position:fixed;
     left:0px;
     top:55px;
     bottom:0px;
     background-color: white;
-    width:70px;
+    width:72px;
+    z-index: 200;
+    padding-top:5px;
+}
+.sidebar-link{
+    height:76px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor:pointer;
+    
+}
+.sidebar-link:hover{
+    background-color: rgb(228, 226, 226);
+}
+.sidebar-link img{
+    width:24px;
+    height:24px;
+    padding-bottom: 6.5px;
+}
+
+.sidebar-link div{
+    font-family:roboto,arial;
+    font-size:10px;
 }

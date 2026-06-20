@@ -101,19 +101,28 @@ Similar to css grid (but its more flexible)
                 <input class="search-bar" type ="text" placeholder="Search">
                 <button class="search-button">
                     <img class="searchimg" src="icons/search.svg">
+                    <div class="tooltip"> Search</div>
                 </button>
                 <button class="voice-button">
                    <img class="voiceimg" src="icons/voice-search-icon.svg">
+                   <div class="tooltip"> Search with your voice</div>
                 </button>
             </div>
             <div class="right-section">
-                <img class="upload-icon" src="icons/upload.svg">
-                <img class="apps-icon" src="icons/youtube-apps.svg">
+                <div class="create">
+                    <img class="upload-icon" src="icons/upload.svg">
+                    <div class="tooltip"> Create</div>
+                </div>
+                <div class="apps-container">
+                    <img class="apps-icon" src="icons/youtube-apps.svg">
+                    <div class="tooltip"> youtube apps</div>
+                </div>
+                
 
                 <div class="notification-icon-container">
                     <img class="notification-icon" src="icons/notifications.svg">
                     <div class="notifications-count">3</div>
-
+                    <div class="tooltip"> youtube apps</div>
                 </div>
                 
                 <img class="profile-pic-icon" src="icons/profile.png">
@@ -122,23 +131,79 @@ Similar to css grid (but its more flexible)
         </div>
 
         <div class="sidebar">
-           sidebar
+           <div class="sidebar-link">
+            <img src="icons/home.svg">
+            <div>Home</div>
+           </div>
+           <div class="sidebar-link">
+            <img src="icons/explore.svg">
+            <div>Explore</div>
+           </div>
+           <div class="sidebar-link">
+            <img src="icons/subscriptions.svg">
+            <div>Subscriptions</div>
+           </div>
+           <div class="sidebar-link">
+            <img src="icons/originals.svg">
+            <div>Originals</div>
+           </div>
+           <div class="sidebar-link">
+            <img src="icons/youtube-music.svg">
+            <div>YouTube Music</div>
+           </div>
+           <div class="sidebar-link">
+            <img src="icons/library.svg">
+            <div>Library</div>
+           </div>
 
         </div>
         
         <div class="video-grid">
             <div class="video-preview">
                 <div class="thumbnail-div">
-                    <img class="sundar" src="thumbnails/thumbnail-1.webp">
+                    <a href="https://youtu.be/n2RNcPRtAiY?si=YQVnAaMWNZCKg5bM" target="_blank">
+                         <img class="sundar" src="thumbnails/thumbnail-1.webp">
+                    </a>
+                   
                     <div class="video-time">14:20</div>
                 </div>
                 <div class="video-info-grid">
-                    <div>
+                    <div class="popup">
                         <img class ="channel-pic" src="channel_profile/channel-1.jpeg">
+                        <div class="toolpip"> 
+                            <img style="
+                                 height:45px;
+                                 margin-top: 8px;
+                                 margin-left: 15px;
+                                 border-radius: 25px;
+
+                                 " src="channel_profile/channel-1.jpeg">
+                            <div>
+                                        <p style="font-size: 15px;
+                                                  font-family:roboto,arial;
+                                                  padding:5px;
+                                                  margin-right:10px;
+                                                  margin-top: 5px;
+                                                  font-weight: bold;"> Marques Brownlee</p>
+                                        <p style="font-size: 13px;
+                                                  font-family:roboto,arial;
+                                                  padding:5px;
+                                                  margin-bottom: 5px;">15M Subscribers</p>
+                            </div>
+                        </div>
                     </div>
                     <div>
-                        <p class ="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
-                        <p class="video-aurthor"> Marques Brownlee</p>
+                        <p class ="video-title">
+                            <a class ="channeltitle-link" href="https://youtu.be/n2RNcPRtAiY?si=YQVnAaMWNZCKg5bM" target="_blank">
+                                Talking Tech and AI with Google CEO Sundar Pichai!
+                            </a></p>
+                        <p class="video-aurthor">
+                            <a class ="channelname-link" href="https://youtu.be/n2RNcPRtAiY?si=YQVnAaMWNZCKg5bM" target="_blank">
+                                Marques Brownlee
+                            </a> 
+                        </p>
+                        </a>
+                        
                         <p class="video-det">3.4M views &#183; 6 months ago</p> 
                     </div>
                 </div>
